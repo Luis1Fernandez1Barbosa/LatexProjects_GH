@@ -1,0 +1,100 @@
+\documentclass[10pt,letterpaper]{LabHMO}
+\input{Preambulo.tex}
+\begin{document}
+	\input{FormatoCarta.tex}
+%\begin{center}
+%\fbox{{\Large Ejercicio de Clase No.\hspace{0.7cm}}}
+%\end{center}
+\begin{center}
+	\fbox{{\Large Tarea No. 4}}
+\end{center}
+
+
+\noindent {\large
+Sean las matrices de rotación:
+
+\begin{equation}
+	{}^0\boldsymbol{R}_1=\begin{bmatrix}
+		\cos\theta_1&-\sin\theta_1&0\\
+		\sin\theta_1&\cos\theta_1&0\\
+		0&0&1
+	\end{bmatrix}
+\end{equation}
+y 
+
+\begin{equation}
+	{}^1\boldsymbol{R}_2=\begin{bmatrix}
+		\cos\theta_2&-\sin\theta_2&0\\
+		\sin\theta_2&\cos\theta_2&0\\
+		0&0&1
+	\end{bmatrix}
+\end{equation}
+
+
+
+\noindent obtener la matriz ${}^0\boldsymbol{R}_2$ si 
+
+\begin{equation}
+{}^0\boldsymbol{R}_2={}^0\boldsymbol{R}_1{}^1\boldsymbol{R}_2.
+\end{equation}
+Para el resultado final, considerar las identidades de suma y resta de dos ángulos:
+\begin{align*}
+	\sin(\alpha\pm\beta)=&\sin\alpha\cos\beta\pm\cos\alpha\sin\beta\\
+	\cos(\alpha\pm\beta)=&\cos\alpha\cos\beta\pm\sin\alpha\sin\beta\\
+	\tan(\alpha\pm\beta)=&\frac{\tan\alpha\pm\tan\beta}{1\pm\tan\alpha\tan\beta}.
+\end{align*}
+	
+Resultado:
+
+\begin{equation}
+{}^0\boldsymbol{R}_2={}^0\boldsymbol{R}_1{}^1\boldsymbol{R}_2=
+\end{equation}
+
+\begin{equation}
+	{}^0\boldsymbol{R}_2=\begin{bmatrix}
+		\cos\theta_1&-\sin\theta_1&0\\
+		\sin\theta_1&\cos\theta_1&0\\
+		0&0&1
+	\end{bmatrix}
+		\begin{bmatrix}
+		\cos\theta_2&-\sin\theta_2&0\\
+		\sin\theta_2&\cos\theta_2&0\\
+		0&0&1
+	\end{bmatrix}=
+\end{equation}
+
+\begin{equation}
+	=\begin{bmatrix}
+		[(\cos\theta_1)(\cos\theta_2)+(-\sin\theta_1)(\sin\theta_2)+0] & [(\cos\theta_1)(-\sin\theta_2)+(-\sin\theta_1)(\cos\theta_2)+0] & 0\\
+		[(\sin\theta_1)(\cos\theta_2)+(\cos\theta_1)(\sin\theta_2)+0] & [(\sin\theta_1)(-\sin\theta_2)+(\cos\theta_1)(\cos\theta_2)+0] & 0\\
+		0&0&1
+	\end{bmatrix}=
+\end{equation}
+
+\begin{equation}
+	=\begin{bmatrix}
+		[\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2] & [-\cos\theta_1\sin\theta_2-\sin\theta_1\cos\theta_2] & 0\\
+		[\sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2] & [-\sin\theta_1\sin\theta_2+\cos\theta_1\cos\theta_2] & 0\\
+		0&0&1
+	\end{bmatrix}=
+\end{equation}
+
+\begin{equation}
+	=\begin{bmatrix}
+		[\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2] & -[\cos\theta_1\sin\theta_2+\sin\theta_1\cos\theta_2] & 0\\
+		[\sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2] & [\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2] & 0\\
+		0&0&1
+	\end{bmatrix}=
+\end{equation}
+
+\begin{equation}
+	\fbox{$^0\boldsymbol{R}_2=\begin{bmatrix}
+		\cos(\theta_1-\theta_2) & -\sin(\theta_1+\theta_2) & 0\\
+		\sin(\theta_1+\theta_2) & \cos(\theta_1-\theta_2) & 0\\
+		0&0&1\\
+	\end{bmatrix}$}
+\end{equation}
+
+\centerline{\textbf{Matriz de rotación} (articulación 2 respecto a articulación 0)}
+}
+\end{document}
